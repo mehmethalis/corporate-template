@@ -1,16 +1,359 @@
 html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+body,a{
+    font-family: 'Mulish', sans-serif;
+
+}
+h2{
+    color: #052944!important;
+}
+h1,h3{
+    text-transform: capitalize;
+    color: #fff!important;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+a:hover{
+    text-decoration: none!important;
+
+}
+#vertical-divider{
+    vertical-align: top;
+    color:#052944;
+    font-size: 40px;
 }
 
-* {
-  box-sizing: border-box;
+
+.header-contact {
+    font-weight: 300;
+    display: inline;
+}
+
+.header-contact i{
+    vertical-align: middle;
+    margin-left: 25px;
+    margin-right: 5px;
+    font-size: 20px;
+    color: #052944;
+}
+.header-contact a{
+    transition-duration: 0.5s;
+}
+.header-contact a:hover{
+    transition-duration: 0.5s;
+    color:#6a040f!important;
+}
+.header-navbar{
+    padding: 10px 8%;
+    background-color: white!important;
+    box-shadow: 0 2px 5px #000;
+}
+.header-navbar a{
+    color: #052944!important;
+    font-size: 16px!important;
+}
+
+#mobile-visible{
+    display: none!important;
+}
+
+#nav-button{
+    display: none;
+    margin-left: 15px;
+    color: #052944;
+
+}
+.logo-img{
+    width: 150px;
+    padding: 18px 16px;
+    transition-duration: 0.5s;
+}
+.logo-img:hover{
+    transition-duration: 0.5s;
+    transform: scale(1.05,1.05);
+    opacity: 0.9;
+}
+.slider-session{
+    position: relative;
+    text-align: center;
+}
+.custom-slider{
+    height: calc(100vh - 78px)!important;
+
+}
+.slider-img{
+    text-align: center;
+    position: relative;
+}
+.slider-img img{
+    object-fit: cover;
+    filter: blur(5px);
+    height: 100vh!important;
+    width: 100%;
+}
+.slider-img i{
+    position: absolute;
+    bottom: 25px;
+    right: 50%;
+    color:#ffff;
+    font-size: 40px;
+}
+.img-caption{
+    color: white;
+    position: absolute;
+    right: 20%;
+    left: 20%;
+    top:30vh;
+    font-size: 60px;
+    font-family: 'Nerko One', cursive!important;
+}
+
+.rs-carousel-label-wrapper input:checked ~ label{
+    background-color: gray!important;
+}
+.rs-carousel-label-wrapper input:checked ~ label:hover{
+    background-color: #052944!important;
+}
+
+.row-info{
+    padding: 80px 8% 0 8%;
+}
+.info{
+    text-align: left;
+}
+.info-img{
+    padding-left: 10%!important;
+}
+.grid-info{
+    padding-top: 50px;
+    padding-bottom: 8%;
+    background-color: #052944;
+    text-align: center;
+}
+.row-services{
+    text-align: center;
+    padding: 80px 8% 0 8%;
+}
+.rs-panel-heading{
+    font-size: 20px!important;
+    font-weight: 600;
+
+}
+.service-card{
+    margin-top: 15px;
+    background-color: white;
+    margin-left: 25px;
+    height: 180px;
+    transition-duration: 0.5s;
+
+}
+
+.service-card:hover{
+    background-color: #6a040f;
+    transition-duration: 0.5s;
+    opacity: 0.8;
+}
+.service-card:hover i{
+    transition-duration: 0.5s;
+    color: white!important;
+}
+.service-card:hover .rs-panel-heading{
+    color: white;
+
+}
+.service-card i{
+    transition-duration: 0.5s;
+    font-size: 50px;
+    color: #052944;
+}
+
+.grid-teams{
+    padding-top: 50px;
+    padding-bottom: 5%;
+    text-align: center;
+}
+.card-team{
+    margin: 10px 10px 0 0;
+    transition-duration: 0.5s;
+}
+.card-team img{
+    transition-duration: 0.5s;
+
+}
+.card-team:hover{
+    color: white!important;
+    background-color: #6a040f;
+    transition-duration: 0.5s;
+}
+
+.card-team:hover img{
+    transition-duration: 0.5s;
+    transform: scale(1.1,1.1);
+}
+
+.grid-blog{
+    padding: 50px 10% 50px 10%!important;
+    background-color: #052944;
+    text-align: center;
+}
+.blog-list{
+    text-align: left;
+}
+.blog-list a:hover h3{
+    transition-duration: 0.5s;
+    transform: scale(1.05,1.05);
+    color: #6a040f!important;
+}
+
+.blog-post-date{
+    margin-right: 15px;
+    text-align: right;
+    font-style: italic;
+    font-weight: 600;
+    color:white;
+}
+.post-modal{
+    margin: 50px;
+}
+.grid-contact{
+    padding: 50px 8%!important;
+    text-align: center;
+}
+
+.contact-form{
+    border-left: solid 1px #000000;
+    margin-top: 25px;
+    text-align: left!important;
+}
+.submit{
+    text-align: center;
+}
+.send-button{
+    text-align: center;
+    width: 120px;
+    transition-duration: 0.3s;
+}
+.send-button:hover{
+    background-color: #052944;
+    color: white!important;
+    transition-duration: 0.3s;
+}
+.contact-img img{
+    object-fit:cover;
+}
+#adress{
+    color:#fff!important;
+    font-weight: 600;
+    position: absolute;
+    bottom:2%;
+}
+#footer{
+    padding: 0!important;
+    text-align: center;
+    margin: 0!important;
+    height: 50px!important;
+}
+
+.footer-grid{
+    padding: 0 8%!important;
+    background-color: #161a1d;
+}
+
+.footer-grid img{
+    margin-top: 50px;
+    width: 150px;
+
+}
+.footer-grid h6{
+    margin-top: 50px;
+    color: white;
+}
+.footer-link{
+    padding-top: 50px;
+}
+.footer-link a{
+    font-size: 30px;
+    color: white;
+    margin-left: 25px;
+}
+.footer-link i{
+    transition-duration: 0.5s;
+
+}
+.footer-link i:hover{
+    transition-duration: 0.5s;
+    transform: scale(1.2);
+}
+.footer-grid p{
+    color: white;
+}
+.footer-about p{
+
+    padding-top: 50px;
+    font-weight: 300;
+}
+#footer-designer{
+    font-style: italic;
+    float: right;
+    font-size: small;
+}
+
+hr.solid {
+    border-top: 1px solid #ffffff;
+}
+.post-detail-card{
+    background-color: #ffffff;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif!important;
+    text-align: center;
+    margin: 50px auto!important;
+}
+.post-body{
+    text-align: left;
+    text-indent: 25px;
+}
+.blog-post-detail-date{
+    color: #052944;
+    font-size: 18px;
+    float: right;
+}
+@media only screen and (max-width: 700px) {
+    .mobile-contact{
+        text-align: center;
+        display: block;
+    }
+    .mobile-contact i{
+        color: #052944;
+        margin-right: 10px;
+    }
+    .mobile-contact a{
+        float: left;
+        text-align: center;
+        display: block;
+    }
+    .mobile-link{
+        text-align: center;
+    }
+    .mobile-link i{
+        font-size: 20px;
+        margin-left: 15px;
+    }
+    #mobile-visible {
+        display: block;
+    }
+    #mobile-hidden{
+        display: none;
+    }
+    #nav-button{
+        position: absolute;
+        top: 25px;
+        right: 15px;
+        display: block;
+    }
+    .header-contact{
+        display: none;
+    }
+    .contact-img img{
+        float: left;
+        width: 250px;
+    }
+
 }
