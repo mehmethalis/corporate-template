@@ -1,5 +1,5 @@
 ## Live Demo
-<a href="https://corporate-template.vercel.app/"> Go Site </a>
+<a href="https://corporate-template.vercel.app/" target="_blank" rel="tag"> Go Site </a>
 
 ## Environments
 ```bash
