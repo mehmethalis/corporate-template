@@ -1,4 +1,16 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Live Demo
+<a href="https://corporate-template.vercel.app/"> Go Site </a>
+
+## Environments
+```bash
+(Strapi)
+API_BASE_URL=  xxxx
+
+(emailjs)
+EMAIL_SERVICE_ID=  xxxx
+EMAIL_TEMPLATE_ID= xxxx
+EMAIL_USER_ID= xxxx
+```
 
 ## Getting Started
 

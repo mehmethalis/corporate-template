@@ -2,7 +2,6 @@ import {Grid} from 'rsuite';
 import {List} from 'antd';
 
 const Blog=({posts})=>{
-    console.log(posts)
     return(
         <Grid id='blog' fluid className="grid-blog">
             <h1>Blog</h1>
